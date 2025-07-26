@@ -28,14 +28,14 @@ class CartController extends Controller
     public function fetchCart(Request $request)
     {
 
-        // Handle the AJAX request to get the cart data
+
         $cart = $this->cartService->viewCart($request);
 
         $guestToken = $request->cookie('guest_token') ?? Str::uuid();
 
         $cartItems = Cart::with('course')->where('guest_token', $guestToken)->get();
 
-        // Total Amount (discounted বা selling price) হিসাব করা
+
         $subTotal = $cartItems->sum(function ($cartItem) {
             $price = $cartItem->course->discount_price ?? $cartItem->course->selling_price;
             return $cartItem->quantity * ($price ?? 0);
@@ -55,8 +55,8 @@ class CartController extends Controller
     {
 
         $validated_data = $request->validate([
-            'course_id' => 'required|exists:courses,id', // Check if course_id exists in the courses table
-            'quantity' => 'nullable|integer|min:1', // Optional quantity
+            'course_id' => 'required|exists:courses,id',
+            'quantity' => 'nullable|integer|min:1',
         ]);
 
         $course_id = $validated_data['course_id'];
@@ -68,8 +68,6 @@ class CartController extends Controller
     {
 
         $cart =  $this->cartService->viewCart($request);
-
-        // Total Amount (discounted বা selling price) হিসাব করা
         $subTotal = $cart->sum(function ($cartItem) {
             $price = $cartItem->course->discount_price ?? $cartItem->course->selling_price;
             return $cartItem->quantity * ($price ?? 0);
@@ -85,12 +83,12 @@ class CartController extends Controller
 
     public function removeCart(Request $request)
     {
-        $cartItem = Cart::find($request->id); // Change 'Cart' to your model
+        $cartItem = Cart::find($request->id);
         if (!$cartItem) {
             return response()->json(['status' => 'error', 'message' => 'Cart item not found']);
         }
 
-        $cartItem->delete(); // Remove the course from the cart
+        $cartItem->delete();
 
         return response()->json(['status' => 'success', 'message' => 'Course removed from cart']);
     }

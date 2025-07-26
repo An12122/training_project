@@ -19,7 +19,7 @@ $(function() {
 
 
 		$(document).ready(function () {
-            // পেজ লোড হলে localStorage থেকে থিম চেক করা
+            //
             if (localStorage.getItem("theme") === "dark") {
                 $("html").addClass("dark-theme");
                 $(".dark-mode-icon i").attr("class", "bx bx-sun");
@@ -28,16 +28,16 @@ $(function() {
                 $(".dark-mode-icon i").attr("class", "bx bx-moon");
             }
 
-            // ডার্ক মোড টগল ফাংশন
+            //
             $(".dark-mode").on("click", function () {
                 if ($("html").hasClass("dark-theme")) {
                     $("html").removeClass("dark-theme").addClass("light-theme");
                     $(".dark-mode-icon i").attr("class", "bx bx-moon");
-                    localStorage.setItem("theme", "light"); // লাইট মোড সংরক্ষণ
+                    localStorage.setItem("theme", "light");
                 } else {
                     $("html").removeClass("light-theme").addClass("dark-theme");
                     $(".dark-mode-icon i").attr("class", "bx bx-sun");
-                    localStorage.setItem("theme", "dark"); // ডার্ক মোড সংরক্ষণ
+                    localStorage.setItem("theme", "dark");
                 }
             });
         });

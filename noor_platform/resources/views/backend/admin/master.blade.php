@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 
 <head>
     @include('backend.section.link')
-    <title>Noor - Admin Dashboard</title>
+    <title>منصة نور - لوحة تحكم المشرف</title>
 
     <style>
         html {
@@ -14,15 +15,18 @@
     </style>
 
     <script>
-        (function () {
-            if (localStorage.getItem("theme") === "dark") {
-                document.documentElement.classList.add("dark-theme");
-            } else {
-                document.documentElement.classList.add("light-theme");
-            }
-            document.documentElement.style.visibility = "visible";
-            document.documentElement.style.opacity = "1";
-        })();
+        (function() {
+                if (localStorage.getItem("theme") === "dark") {
+                    document.documentElement.classList.add("dark-theme");
+                } else {
+                    document.documentElement.classList.add("light-theme");
+                }
+                document.documentElement.style.visibility = "visible";
+                document.documentElement.style.opacity = "1"; <
+                script src = "https://cdn.jsdelivr.net/npm/sweetalert2@11" >
+    </script>
+
+    })();
     </script>
 
 </head>
@@ -46,7 +50,7 @@
         <!--end page wrapper -->
 
 
-    @include('backend.section.footer')
+        @include('backend.section.footer')
 
 
 
