@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">
-    <title>منصة نور - نظام تعليمي متكامل</title>
+
+    <title>Noor - Learning Management System</title>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">

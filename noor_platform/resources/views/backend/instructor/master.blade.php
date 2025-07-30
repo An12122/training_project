@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
     @include('backend.section.link')
-    <title>منصة نور - لوحة تحكم المدرب</title>
+    <title>Noor - Instructor Dashboard</title>
 </head>
 
 <body>

@@ -28,8 +28,11 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/helpers.php"
-        ]
+    "app/helpers.php",
+    "app/Helpers/GlobalHelper.php",
+    "app/Helpers/wishlist.php"
+]
+
     },
     "autoload-dev": {
         "psr-4": {

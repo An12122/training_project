@@ -20,7 +20,7 @@
 
                         <div class="card shadow-none bg-transparent shadow-none rounded-0 mb-0">
                             <div class="card-body">
-                                <img src="{{asset('backend/assets/images/login-images/login-cover.svg')}}"
+                                <img src="{{asset('backend/assets/images/login-images/login-cover-3.svg')}}"
                                     class="img-fluid auth-img-cover-login" width="650" alt="" />
                             </div>
                         </div>
@@ -32,7 +32,7 @@
                             <div class="card-body p-sm-5">
                                 <div class="">
                                     <div class="mb-3 text-center">
-                                        <img src="{{asset('backend/assets/images/logo-icon.png')}}" width="60" alt="">
+                                        <img src="{{asset('backend/assets/images/logo-noor-icon.png')}}" width="200" alt="">
                                     </div>
                                     <div class="text-center mb-4">
                                         <h5 class="">Admin Credential</h5>
@@ -70,7 +70,7 @@
 											</div>
 
 										</form>
-                                        
+
                                     </div>
 
 

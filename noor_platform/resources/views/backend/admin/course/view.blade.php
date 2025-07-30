@@ -28,7 +28,7 @@
 
         <hr />
 
-        <div class="row g-4"> <!-- এখানে g-4 ক্লাসটি গ্যাপ যোগ করবে -->
+        <div class="row g-4"> 
 
             <div class="col-md-6">
                 <div class="card">

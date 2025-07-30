@@ -174,6 +174,12 @@ Route::middleware('auth')->group(function () {
 });
 
 
+Route::get('/test-auth', function () {
+    if (Auth::check()) {
+        return 'User logged in with role: ' . Auth::user()->role;
+    }
+    return 'No user logged in';
+})->middleware('auth');
 
 
 

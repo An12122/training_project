@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.rtl.min.css') }}">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="author" content="TechyDevs">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>نور - منصة تعليمية متكاملة</title>
+    <title>Noor - Professional Platform</title>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -55,7 +54,7 @@
         </div><!-- end off-canvas-menu -->
         <div class="dashboard-content-wrap">
             <div class="dashboard-menu-toggler btn theme-btn theme-btn-sm lh-28 theme-btn-transparent mb-4 ml-3">
-                <i class="la la-bars mr-1"></i> لوحة القيادة
+                <i class="la la-bars mr-1"></i> Dashboard Nav
             </div>
 
             <div class="container-fluid">

@@ -1,0 +1,41 @@
+<?php
+
+return [
+    'accepted'             => 'يجب قبول :attribute.',
+    'active_url'           => ':attribute ليس رابطًا صحيحًا.',
+    'after'                => 'يجب أن يكون :attribute تاريخًا بعد :date.',
+    'after_or_equal'       => 'يجب أن يكون :attribute تاريخًا مساويًا أو بعد :date.',
+    'alpha'                => 'يجب أن يحتوي :attribute على أحرف فقط.',
+    'alpha_dash'           => 'يجب أن يحتوي :attribute على أحرف وأرقام وشرطات.',
+    'alpha_num'            => 'يجب أن يحتوي :attribute على أحرف وأرقام فقط.',
+    'array'                => 'يجب أن يكون :attribute مصفوفة.',
+    'before'               => 'يجب أن يكون :attribute تاريخًا قبل :date.',
+    'before_or_equal'      => 'يجب أن يكون :attribute تاريخًا مساويًا أو قبل :date.',
+    'between'              => [
+        'numeric' => 'يجب أن يكون :attribute بين :min و :max.',
+        'file'    => 'يجب أن يكون حجم الملف :attribute بين :min و :max كيلوبايت.',
+        'string'  => 'يجب أن يكون عدد الأحرف في :attribute بين :min و :max.',
+        'array'   => 'يجب أن يحتوي :attribute على بين :min و :max عنصر.',
+    ],
+    'boolean'              => 'يجب أن تكون قيمة :attribute صحيحة أو خاطئة.',
+    'confirmed'            => 'تأكيد :attribute غير متطابق.',
+    'current_password'     => 'كلمة المرور غير صحيحة.',
+    'date'                 => ':attribute ليس تاريخًا صحيحًا.',
+    'date_equals'          => 'يجب أن يكون :attribute مساويًا للتاريخ :date.',
+    'date_format'          => 'يجب أن يكون :attribute بتنسيق :format.',
+    'different'            => 'يجب أن يكون :attribute مختلفًا عن :other.',
+    'digits'               => 'يجب أن يحتوي :attribute على :digits أرقام.',
+    'digits_between'       => 'يجب أن يكون عدد أرقام :attribute بين :min و :max.',
+    'email'                => 'يجب أن يكون :attribute بريدًا إلكترونيًا صحيحًا.',
+    'ends_with'            => 'يجب أن ينتهي :attribute بأحد القيم التالية: :values.',
+    'exists'               => ':attribute المحدد غير صالح.',
+    'file'                 => 'يجب أن يكون :attribute ملفًا.',
+    'filled'               => 'يجب تعبئة حقل :attribute.',
+    'gt'                   => [
+        'numeric' => 'يجب أن يكون :attribute أكبر من :value.',
+        'file'    => 'يجب أن يكون حجم الملف :attribute أكبر من :value كيلوبايت.',
+        'string'  => 'يجب أن يحتوي :attribute على أكثر من :value أحرف.',
+        'array'   => 'يجب أن يحتوي :attribute على أكثر من :value عنصر.',
+    ],
+    // ... يمكنك إضافة باقي الرسائل عند الحاجة
+];

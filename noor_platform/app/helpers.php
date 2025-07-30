@@ -1,15 +1,28 @@
 <?php
 
-// use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
+use Illuminate\Support\Carbon;
 
-// if (!function_exists('setSidebar')) {
-//     function setSidebar(array $routes)
-//     {
-//         foreach ($routes as $route) {
-//             if (str_contains(Route::currentRouteName(), $route)) {
-//             return 'mm-active'; // c
-//             }
-//         }
-//         return '';
-//     }
-// }
+// دالة لجعل النص أول حرف منه كبير والباقي صغير
+if (!function_exists('title_case')) {
+    function title_case($string)
+    {
+        return Str::title($string);
+    }
+}
+
+// دالة ترجع الوقت الحالي بتنسيق معين
+if (!function_exists('current_time')) {
+    function current_time($format = 'Y-m-d H:i:s')
+    {
+        return Carbon::now()->format($format);
+    }
+}
+
+// دالة لفحص إذا الرابط يبدأ بـ http
+if (!function_exists('is_valid_url')) {
+    function is_valid_url($url)
+    {
+        return Str::startsWith($url, ['http://', 'https://']);
+    }
+}
